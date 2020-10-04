@@ -1,4 +1,4 @@
-package mali.example.ecommerce;
+package Interface;
 
 import android.view.View;
 

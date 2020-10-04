@@ -1,19 +1,22 @@
 package mali.example.ecommerce.Model;
 
-public class Users {
+public class Users
+{
+    private String name, phone, password, image, address;
 
-    private String name, phone, password;
-
-    public Users(){
-
+    public Users()
+    {
 
     }
 
-    public Users(String name, String phone, String password) {
+    public Users(String name, String phone, String password, String image, String address) {
         this.name = name;
         this.phone = phone;
         this.password = password;
+        this.image = image;
+        this.address = address;
     }
+
 
     public String getName() {
         return name;
@@ -37,5 +40,21 @@ public class Users {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 }
